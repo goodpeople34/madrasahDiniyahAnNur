@@ -1,3 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+
+.activity-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 50px;
+    padding: 100px 0;
+}
+
 .activity-card-right{
-    background-color: aqua;
+    position: relative;
+    width: 80%;
+    height: 200px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px;
+    margin: auto;
+}
+
+
+.activity-text-right{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.activity-text-right h2{
+    font-size: 20px;
+    width: 100%;
+    padding: 5px 30px;
+    background-color: #2abdbf;
+}
+
+
+.activity-text-right p{
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px 30px;
+    color: #333;
+}
+
+.image-kegiatan-right{  
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: auto;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 2;
+}
+
+.image-kegiatan-right img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.activity-card-left{
+    position: relative;
+    width: 80%;
+    height: 200px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px;
+    margin: auto;
+}
+
+.activity-text-left{
+    position: relative;
+    width: 100%;
+    text-align: right;
+    z-index: 1;
+}
+
+.activity-text-left h2{
+    font-size: 20px;
+    width: 100%;
+    padding: 5px 30px;
+    background-color: #2abdbf;
+}
+
+
+.activity-text-left p{
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px 30px;
+    color: #333;
+}
+
+.image-kegiatan-left{  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+    z-index: 2;
+}
+
+.image-kegiatan-left img{
+    width: 100%;
+}
+
+@media (max-width : 768px){
+.activity-card-right{
+      width: 100%;
+      height: 220px;
+    }
+
+.activity-card-left{
+        width: 100%;
+        height: 220px;
+    }
+.activity-content h2{
+    font-size: 17px;
+}
+
+.activity-text-right p{
+    font-size: 13px;
+    width: 70%;
+}
+.activity-text-left p{
+    font-size: 13px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.image-kegiatan-right{
+    top: 10%;
+    clip-path: polygon(55% 5%, 100% 5%, 100% 100%, 35% 100%, 75% 35%);
+    z-index: 0;
+  }
+
+  .image-kegiatan-right img{
+    height: 220px;
+    width: 300px;
+    object-position: 120px 0;
+  }
+
+.image-kegiatan-left{
+    top: 10%;
+    clip-path: polygon(0 5%, 58% 5%, 16% 66%, 35% 100%, 0 100%);
+    z-index: 0;
+  }
+
+  .image-kegiatan-left img{
+    object-position: -130px 0;
+  }
+  
+
 }
