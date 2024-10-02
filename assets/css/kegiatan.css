@@ -46,6 +46,7 @@
 
 .activity-text-right p{
     margin-top: 10px;
+    width: 70%;
     font-size: 16px;
     padding: 10px 30px;
     color: #333;
@@ -95,6 +96,8 @@
 
 .activity-text-left p{
     margin-top: 10px;
+    float: right;
+    width: 70%;
     font-size: 16px;
     padding: 10px 30px;
     color: #333;
