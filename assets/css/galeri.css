@@ -78,6 +78,10 @@
 }
 
 @media (max-width: 768px) {
+  .album{
+    padding-top: 100px;
+  }
+  
   .album .img {
     max-width: 32.5%;
     margin: 0 0 0 0;
